@@ -15,21 +15,21 @@ while run:
             run = False
 
         if event.type == pygame.KEYDOWN:
-            print("Key pressed")
+            print(f"Key released: {event.unicode}")
 
         if event.type == pygame.KEYUP:
             print("Key released")
 
         if event.type == pygame.MOUSEBUTTONDOWN:
-            print("Mouse clicked")
+            print(f'Mouse pressed: {event.button}')
 
         if event.type == pygame.MOUSEBUTTONUP:
             print("Mouse released")
 
         if event.type == pygame.MOUSEMOTION:
-            print("Mouse moving")
+            print(f"Mouse moved: {event.pos}")
 
         if event.type == pygame.MOUSEWHEEL:
-            print("Scroll-wheel moving/clicked")
+            print(f"Mouse wheel: {event.y}")
 
 pygame.quit()
